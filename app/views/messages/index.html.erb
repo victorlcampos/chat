@@ -1,0 +1,14 @@
+<%= form_for Message.new do |f| %>
+
+  <%= f.text_field :name, placeholder: 'Nome' %>
+  <%= f.text_area :content %>
+  <%= f.submit 'Enviar', id: 'message_submit' %>
+<% end %>
+
+<ul id="messages">
+  <% @messages.each do |chat| %>
+    <li>
+      <%= chat.name %> - <%= chat.content %>
+    </li>
+  <% end %>
+</ul>
