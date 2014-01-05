@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+#to async chat
+gem 'redis'
+gem 'puma'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
